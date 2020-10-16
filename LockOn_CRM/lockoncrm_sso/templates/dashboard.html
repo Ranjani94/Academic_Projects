@@ -1,0 +1,18 @@
+<div class="logged-in-box auth0-box logged-in">
+    <!--<h2 id="logo"><img src="//cdn.auth0.com/samples/auth0_logo_final_blue_RGB.png" /></h2> -->
+    <h1> 	Welcome to LockOnCRM 		</h1>
+    <img class="avatar" src="{{userinfo['picture']}}"/>
+    <h1>Welcome User {{userinfo['name']}}</h1>
+    <!--<pre>{{userinfo_pretty}}</pre>
+    console.log({{userinfo_pretty}})
+	-->
+    <body>
+    <h2><a class="btn btn-primary btn-lg btn-logout btn-block" href="/login/logout">Logout</a></br>
+    <h2><a class="btn btn-primary btn-lg btn-logout btn-block" href="/login/dashboard">home</a></br>
+    <h2><a class="btn btn-primary btn-lg btn-logout btn-block" href="/login/twitter">Twitter</a></br>
+    <h2><a class="btn btn-primary btn-lg btn-logout btn-block" href="/login/view_tickets">View Ticket</a></br>
+    <h2><a class="btn btn-primary btn-lg btn-logout btn-block" href="/login/file_issue">Create Ticket</a></br>
+    <h2><a class="btn btn-primary btn-lg btn-logout btn-block" href="/login/invoice">Invoice</a></br>
+    <h2><a class="btn btn-primary btn-lg btn-logout btn-block" href="/login/customers">Customers</a></br>
+    </body>
+</div>
