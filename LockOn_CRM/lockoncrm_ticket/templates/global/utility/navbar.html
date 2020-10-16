@@ -1,0 +1,24 @@
+  <div class="menu">
+    <ul class="nav navbar-nav navbar-right">
+        <li id="menu_item" class="menu1"><a href="{{url_for('login')}}">Home</a></li>
+        {% if current_user.is_authenticated %}
+        <li id="menu_item" class="menu3">
+           <a href="{{url_for('dashboard')}}">
+           Dashboard
+           </a> 
+        </li>
+        <li id="menu_item" class="menu4">
+           <a href="{{url_for('logout')}}">
+           Logout
+           </a>
+        </li>
+        {% endif %}
+    	</ul>
+    	<div class="clear"></div>
+    </ul>
+</div>
+
+<div>
+   	<div class="clear"></div>
+</div>
+
